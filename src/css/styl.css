@@ -1,11 +1,11 @@
 @font-face {
-  font-family: bazuka;
+  font-family: "bazuka";
   src: url(../fonts/regular.ttf);
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: bazuka;
+  font-family: "bazuka";
   src: url(../fonts/bold.ttf);
   font-weight: bold;
   font-style: normal;
@@ -18,9 +18,7 @@
 a {
   text-decoration: none;
 }
-ul {
-  list-style: none;
-}
+
 .logo {
   width: 115px;
   height: auto;
@@ -37,15 +35,18 @@ header {
   max-width: 1475px;
   padding-top: 40px;
   padding-bottom: 282px;
+  width: 95%;
 }
 ul {
+  list-style: none;
   display: flex;
   align-items: center;
   gap: 40px;
   a {
-    font-family: bazuka;
+    font-family: "bazuka";
     color: #ffffff;
     font-size: 16px;
+    font-weight: bold;
   }
 }
 li:last-child a {
@@ -56,11 +57,74 @@ li:last-child a {
   display: inline-block;
   text-align: center;
   color: #171717;
-  font-weight: bold;
+
   transition: 0.4s;
 }
 li:last-child a:hover {
   background-color: #f0f0f0;
   transform: scale(1.1);
   transition: 0.3s;
+}
+main {
+  max-width: 1195px;
+  margin: auto;
+}
+.main-img {
+  max-width: 100%;
+  height: auto;
+  margin-top: -172px;
+  margin-bottom: 30px;
+}
+h1 {
+  margin-bottom: 60px;
+  font-family: "bazuka";
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.conteiner-for-img {
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+}
+.conteiner-for-img img {
+  width: 19%;
+  max-width: 219px;
+  height: auto;
+
+  object-fit: cover;
+}
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 18px;
+  margin-left: 9%;
+  margin-right: 9%;
+
+  margin-top: 60px;
+  span {
+    display: block;
+    margin-top: 30px;
+  }
+  a {
+    background-color: #0a22f4;
+    font-family: "bazuka";
+    font-weight: 700;
+    padding: 18px 77px 18px 57px;
+    color: #ffffff;
+    display: inline-block;
+    text-align: center;
+    border-radius: 28px;
+  }
+  .add-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 58px;
+    margin-bottom: 198px;
+  }
+  P {
+    font-family: "bazuka";
+    font-weight: 400;
+  }
 }
